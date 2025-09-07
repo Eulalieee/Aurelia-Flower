@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt hàng - Aurelia Flower</title>
+    <meta name="description" content="Điền thông tin và hoàn tất đơn hàng tại Aurelia Flower.">
+    <meta name="keywords" content="đặt hàng, checkout, hoa tươi, Aurelia, thanh toán">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="header-top container">
+    <div class="logo"><img src="images/Logo/logo.png" alt="Aurelia Shop"></div>
+    <div class="search-wrapper">
+      <input type="text" id="search-input" placeholder="Tìm sản phẩm...">
+      <button id="search-btn" title="Tìm kiếm"><i class="fa fa-search"></i></button>
+      <div id="search-results"></div>
+    </div>
+    <div class="header-icons">
+      <button id="cartBtn" class="icon-button" aria-label="Giỏ hàng"><i class="fa fa-shopping-cart"></i></button>
+      <button class="icon-button" aria-label="Đăng nhập"><i class="fa fa-user"></i></button>
+    </div>
+    <button id="menu-toggle" class="hamburger" aria-label="Mở menu"><span></span><span></span><span></span></button>
+  </div>
+  <nav>
+    <ul class="nav-links container">
+      <li><a href="#">Trang chủ</a></li>
+      <li><a href="#">Sản phẩm</a></li>
+      <li><a href="#">Liên hệ</a></li>
+    </ul>
+  </nav>
+</header>
+<main class="container">
+    <div class="checkout-container">
+        <div class="checkout-form-section">
+            <h2>Thông tin đặt hàng</h2>
+            <form id="checkout-form" class="checkout-form">
+                <div class="form-field">
+                    <label for="full-name">Họ và tên *</label>
+                    <input type="text" id="full-name" placeholder="Họ và tên" required aria-required="true">
+                </div>
+                <div class="form-field">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" placeholder="Email" required aria-required="true">
+                </div>
+                <div class="form-field">
+                    <label for="phone">Số điện thoại *</label>
+                    <input type="tel" id="phone" placeholder="Số điện thoại" required aria-required="true">
+                </div>
+                <div class="form-field">
+                    <label for="address">Địa chỉ giao hàng *</label>
+                    <textarea id="address" placeholder="Số nhà, đường, phường, quận" rows="4" required aria-required="true"></textarea>
+                </div>
+                <button type="submit">Gửi đơn hàng</button>
+            </form>
+        </div>
+
+        <div class="order-summary-section">
+            <h2>Đơn hàng của bạn</h2>
+            <ul id="order-summary-list" class="order-summary-list">
+                </ul>
+            <div class="summary-total">
+                <p>Tổng tiền: <span id="order-total">0₫</span></p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<button id="back-to-top" class="back-to-top" aria-label="Lên đầu trang" title="Lên đầu trang"><i class="fas fa-arrow-up"></i></button>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-col footer-left">
+            <h4>Aurelia Flower</h4>
+            <p>123 Phố Hoa, Quận 1, TP.HCM</p>
+            <p>0909 123 456</p>
+            <p><a href="mailto:contact@aureliaflower.vn">contact@aureliaflower.vn</a></p>
+        </div>
+        <div class="footer-col footer-center">
+            <h4>Hỗ trợ</h4>
+            <a href="/giohang.html">Hướng dẫn mua hàng</a>
+            <a href="/lienhe.html">Liên hệ</a>
+            <a href="/dangnhap.html">Tài khoản</a>
+        </div>
+        <div class="footer-col footer-right">
+            <h4>Theo dõi</h4>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-col footer-extra">
+            <h4>Dịch vụ</h4>
+            <div class="service-icons">
+                <a href="#" aria-label="Giao hàng nhanh"><i class="fas fa-shipping-fast"></i></a>
+                <a href="#" aria-label="Hỗ trợ 24/7"><i class="fas fa-headset"></i></a>
+                <a href="#" aria-label="Thanh toán an toàn"><i class="fas fa-credit-card"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© <span id="current-year">2025</span> Aurelia Flower. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="js/common.js"></script>
+<script src="js/order.js"></script>
+</body>
+</html>

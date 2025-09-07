@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurelia Flower - Trang chủ</title>
+    <meta name="description" content="Aurelia Flower - Cửa hàng hoa tươi, giao hàng nhanh, sản phẩm chất lượng.">
+    <meta name="keywords" content="hoa, bó hoa, Aurelia, hoa tươi, giỏ hoa, hoa cưới, hoa sinh nhật, hoa chúc mừng, hoa tang">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="header-top container">
+    <div class="logo"><img src="images/Logo/logo.png" alt="Aurelia Shop"></div>
+    <div class="search-wrapper">
+      <input type="text" id="search-input" placeholder="Tìm sản phẩm...">
+      <button id="search-btn" title="Tìm kiếm"><i class="fa fa-search"></i></button>
+      <div id="search-results"></div>
+    </div>
+    <div class="header-icons">
+      <button id="cartBtn"
+       class="icon-button" aria-label="Giỏ hàng">
+       <i class="fa fa-shopping-cart"></i></button>
+      <button class="icon-button" aria-label="Đăng nhập"><i class="fa fa-user"></i></button>
+    </div>
+    <button id="menu-toggle" class="hamburger" aria-label="Mở menu"><span></span><span></span><span></span></button>
+  </div>
+  <nav>
+   <ul class="nav-links">
+  <li><a href="/index.html">Trang chủ</a></li>
+
+ <li class="dropdown">
+  <a href="sanpham.html">Sản phẩm</a>
+<ul class="dropdown-menu">
+  <li><a href="sanpham.html#bohoa">Bó hoa</a></li>
+  <li><a href="sanpham.html#giohoa">Giỏ hoa</a></li>
+  <li><a href="sanpham.html#chucmung">Hoa chúc mừng</a></li>
+  <li><a href="sanpham.html#hoatang">Hoa tang</a></li>
+</ul>
+</li>
+
+
+  <li><a href="/lienhe.html">Liên hệ</a></li>
+</ul>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="banner" aria-label="Banner khuyến mãi">
+      <div class="banner-slides">
+        <img src="images/Banner/Welcome.png" alt="Welcome Aurelia">
+        <img src="images/Banner/Happy Birthday !.png" alt="Khuyến mãi Sinh nhật Aurelia" class="active">
+        <img src="images/Banner/The wedding of YOU.png" alt="Khuyến mãi cưới Aurelia">
+        <img src="images/Banner/Mùa tốt nghiệp ! (1).png" alt="Mùa tốt nghiệp">
+        <img src="images/Banner/happy womenday.png" alt="Ngày của Phụ Nữ">
+        <img src="images/Banner/Siêu sale giữa tháng.png" alt="Siêu Sale">
+      </div>
+
+      <button class="banner-btn prev" aria-label="Banner trước">&#10094;</button>
+      <button class="banner-btn next" aria-label="Banner sau">&#10095;</button>
+
+      <div class="banner-dots" role="tablist" aria-label="Chọn slide">
+        <span class="dot active" role="tab"></span>
+        <span class="dot" role="tab"></span>
+        <span class="dot" role="tab"></span>
+        <span class="dot" role="tab"></span>
+        <span class="dot" role="tab"></span>
+        <span class="dot" role="tab"></span>
+      </div>
+    </section>
+
+    <section class="featured-products" aria-label="Sản phẩm nổi bật">
+    <h2>Sản phẩm nổi bật</h2>
+    <div class="products">
+
+    <article class="product-card" 
+      data-id="1" 
+      data-name="Bó hoa hồng" 
+      data-price="350000" 
+      data-img="images/Bó hoa/Hoa Hồng/Do.jpg">
+      <div class="product-img-wrapper">
+        <img src="images/Bó hoa/Hoa Hồng/Bó hoa hồng đỏ.jpg" alt="Bó hoa hồng đỏ tươi">
+        <span class="badge hot">HOT</span>
+      </div>
+      <h3>Bó hoa hồng</h3>
+      <p class="price">350,000₫</p>
+      <button class="add-to-cart" aria-label="Thêm Bó hoa hồng vào giỏ">
+        <i class="fas fa-cart-plus"></i> Thêm vào giỏ
+      </button>
+    </article>
+
+    <article class="product-card" 
+      data-id="2" 
+      data-name="Bó hoa tulip vàng" 
+      data-price="420000" 
+      data-img="images/Bó hoa/Hoa Tulip/Vang.jpg">
+      <div class="product-img-wrapper">
+        <img src="images/Bó hoa/Hoa Tulip/Tulip vàng.jpg" alt="Bó hoa tulip vàng">
+        <span class="badge sale">SALE</span>
+      </div>
+      <h3>Bó hoa tulip vàng</h3>
+      <p class="price">420,000₫</p>
+      <button class="add-to-cart" aria-label="Thêm Bó hoa tulip vàng vào giỏ">
+        <i class="fas fa-cart-plus"></i> Thêm vào giỏ
+      </button>
+    </article>
+
+    <article class="product-card" 
+      data-id="3" 
+      data-name="Giỏ hoa đỏ" 
+      data-price="250000" 
+      data-img="images/Giỏ hoa/Vuong_2.jpg">
+      <div class="product-img-wrapper">
+        <img src="images/Giỏ hoa/Gio hoa vuông 2.jpg" alt="Giỏ hoa đỏ rực">
+        <span class="badge sale">SALE</span>
+      </div>
+      <h3>Giỏ hoa đỏ</h3>
+      <p class="price">250,000₫</p>
+      <button class="add-to-cart" aria-label="Thêm Giỏ hoa đỏ vào giỏ">
+        <i class="fas fa-cart-plus"></i> Thêm vào giỏ
+      </button>
+    </article>
+
+    <article class="product-card" 
+      data-id="4" 
+      data-name="Hoa cưới đỏ" 
+      data-price="400000" 
+      data-img="images/Hoa Chúc Mừng/Hoa Cưới/HongDo.jpg">
+      <div class="product-img-wrapper">
+        <img src="images/Hoa Chúc Mừng/Hoa Cưới/tone đỏ ( Hoa hồng + hoa chú rễ ).jpg" alt="Hoa cưới đỏ sang trọng">
+        <span class="badge hot">HOT</span>
+      </div>
+      <h3>Hoa cưới đỏ</h3>
+      <p class="price">400,000₫</p>
+      <button class="add-to-cart" aria-label="Thêm Hoa cưới đỏ vào giỏ">
+        <i class="fas fa-cart-plus"></i> Thêm vào giỏ
+      </button>
+    </article>
+
+    <article class="product-card" 
+      data-id="5" 
+      data-name="Lẵng hoa tím" 
+      data-price="650000" 
+      data-img="images/Hoa Chúc Mừng/Khai trương/khung_dai_tone_tim.jpg">
+      <div class="product-img-wrapper">
+        <img src="images/Hoa Chúc Mừng/Khai trương/Hoa khai trương khung dài tone tím dịu.jpg" alt="Lẵng hoa tím khai trương">
+        <span class="badge sale">SALE</span>
+      </div>
+      <h3>Lẵng hoa tím</h3>
+      <p class="price">650,000₫</p>
+      <button class="add-to-cart" aria-label="Thêm Lẵng hoa tím vào giỏ">
+        <i class="fas fa-cart-plus"></i> Thêm vào giỏ
+      </button>
+    </article>
+
+    <article class="product-card" 
+      data-id="6" 
+      data-name="Bó hoa màu sắc" 
+      data-price="350000" 
+      data-img="images/Bó hoa/Hoa mix theo yêu cầu/Mix2.jpg">
+      <div class="product-img-wrapper">
+        <img src="images/Bó hoa/Hoa mix theo yêu cầu/Hoa mix 2.jpg" alt="Bó hoa mix nhiều màu sắc">
+        <span class="badge hot">HOT</span>
+      </div>
+      <h3>Bó hoa màu sắc</h3>
+      <p class="price">350,000₫</p>
+      <button class="add-to-cart" aria-label="Thêm Bó hoa màu sắc vào giỏ">
+        <i class="fas fa-cart-plus"></i> Thêm vào giỏ
+      </button>
+    </article>
+
+    </div>
+  </section>
+</main>
+
+<button id="back-to-top" class="back-to-top" aria-label="Lên đầu trang" title="Lên đầu trang"><i class="fas fa-arrow-up"></i></button>
+
+<footer>
+  <div class="footer-container">
+
+    <div class="footer-col footer-left">
+      <h4>Aurelia Flower</h4>
+      <p>123 Phố Hoa, Quận 1, TP.HCM</p>
+      <p>0909 123 456</p>
+      <p><a href="mailto:contact@aureliaflower.vn">contact@aureliaflower.vn</a></p>
+    </div>
+
+    <div class="footer-col footer-center">
+      <h4>Hỗ trợ</h4>
+      <a href="/giohang.html">Hướng dẫn mua hàng</a>
+      <a href="/lienhe.html">Liên hệ</a>
+      <a href="/dangnhap.html">Tài khoản</a>
+    </div>
+
+    <div class="footer-col footer-right">
+      <h4>Theo dõi</h4>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-col footer-extra">
+      <h4>Dịch vụ</h4>
+      <div class="service-icons">
+        <a href="#" aria-label="Giao hàng nhanh"><i class="fas fa-shipping-fast"></i></a>
+        <a href="#" aria-label="Hỗ trợ 24/7"><i class="fas fa-headset"></i></a>
+        <a href="#" aria-label="Thanh toán an toàn"><i class="fas fa-credit-card"></i></a>
+      </div>
+    </div>
+
+  </div>
+  <div class="footer-bottom">
+    <p>© <span id="current-year">2025</span> Aurelia Flower. All Rights Reserved.</p>
+  </div>
+</footer>
+<script src="js/common.js"></script>
+<script src="js/index.js" defer></script>
+</body>
+</html>

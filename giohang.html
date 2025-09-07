@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng - Aurelia Flower</title>
+    <meta name="description" content="Xem và quản lý giỏ hàng của bạn tại Aurelia Flower. Điều chỉnh số lượng và tiến hành thanh toán.">
+    <meta name="keywords" content="giỏ hàng, thanh toán, mua hoa, hoa tươi, Aurelia">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="header-top container">
+    <div class="logo"><img src="images/Logo/logo.png" alt="Aurelia Shop"></div>
+    <div class="search-wrapper">
+      <input type="text" id="search-input" placeholder="Tìm sản phẩm...">
+      <button id="search-btn" title="Tìm kiếm"><i class="fa fa-search"></i></button>
+      <div id="search-results"></div>
+    </div>
+    <div class="header-icons">
+      <button id="cartBtn" class="icon-button" aria-label="Giỏ hàng"><i class="fa fa-shopping-cart"></i></button>
+      <button class="icon-button" aria-label="Đăng nhập"><i class="fa fa-user"></i></button>
+    </div>
+    <button id="menu-toggle" class="hamburger" aria-label="Mở menu"><span></span><span></span><span></span></button>
+  </div>
+  <nav>
+    <ul class="nav-links container">
+      <li><a href="#">Trang chủ</a></li>
+      <li><a href="#">Sản phẩm</a></li>
+      <li><a href="#">Liên hệ</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="cart-container">
+    <h2>Giỏ hàng của bạn</h2>
+    <table class="cart-table">
+        <thead>
+            <tr>
+                <th>Sản phẩm</th>
+                <th>Hình ảnh</th>
+                <th>Số lượng</th>
+                <th>Giá</th>
+                <th>Tổng</th>
+                <th>Xóa</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <div class="cart-summary">
+        <p>Tổng số lượng: <strong id="total-qty">0</strong></p>
+        <p class="total-row">Tạm tính: <strong id="subtotal">0₫</strong></p>
+        <div style="margin-top:12px;">
+            <a href="/danhmuc.html" class="btn">Tiếp tục mua sắm</a>
+            <a href="/dathang.html" class="btn primary">Tiến hành thanh toán</a>
+        </div>
+    </div>
+</main>
+
+<button id="back-to-top" class="back-to-top" aria-label="Lên đầu trang" title="Lên đầu trang"><i class="fas fa-arrow-up"></i></button>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-col footer-left">
+      <h4>Aurelia Flower</h4>
+      <p>123 Phố Hoa, Quận 1, TP.HCM</p>
+      <p>0909 123 456</p>
+      <p><a href="mailto:contact@aureliaflower.vn">contact@aureliaflower.vn</a></p>
+    </div>
+    <div class="footer-col footer-center">
+      <h4>Hỗ trợ</h4>
+      <a href="/giohang.html">Hướng dẫn mua hàng</a>
+      <a href="/lienhe.html">Liên hệ</a>
+      <a href="/dangnhap.html">Tài khoản</a>
+    </div>
+    <div class="footer-col footer-right">
+      <h4>Theo dõi</h4>
+      <div class="social-icons">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-col footer-extra">
+      <h4>Dịch vụ</h4>
+      <div class="service-icons">
+        <a href="#" aria-label="Giao hàng nhanh"><i class="fas fa-shipping-fast"></i></a>
+        <a href="#" aria-label="Hỗ trợ 24/7"><i class="fas fa-headset"></i></a>
+        <a href="#" aria-label="Thanh toán an toàn"><i class="fas fa-credit-card"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Aurelia Flower. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="js/common.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>
