@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let totalQty = 0;
 
         if (cart.length === 0) {
-            cartTableBody.innerHTML = '<tr><td colspan="6" style="text-align: center; padding: 20px;">Giỏ hàng của bạn đang trống.</td></tr>';
+            cartTableBody.innerHTML = '<tr><td colspan="6" style="text-align: center; color:black; padding: 20px;">Giỏ hàng của bạn đang trống.</td></tr>';
             subtotalElement.innerText = formatCurrency(0);
             totalQtyElement.innerText = 0;
             return;
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
         subtotalElement.innerText = formatCurrency(subtotal);
         totalQtyElement.innerText = totalQty;
 
-        // cập nhật icon & mini-cart
+        
         updateCartIcon();
         if (typeof renderMiniCart === "function") renderMiniCart();
     }
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
         renderCart();
     });
 
-    // Cho phép nhập số lượng trực tiếp
+  
     cartTableBody.addEventListener('input', (e) => {
         if (e.target.classList.contains('qty-input')) {
             const row = e.target.closest('tr');
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     renderCart();
 
-    // Nút checkout
+   
     if (checkoutBtn) {
         checkoutBtn.addEventListener('click', () => {
             if (getCart().length === 0) {
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Footer năm hiện tại
+   
     const yearEl = document.getElementById('current-year');
     if (yearEl) yearEl.innerText = new Date().getFullYear();
 });

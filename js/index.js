@@ -1,4 +1,4 @@
-// =================== BANNER SLIDER ===================
+
 const slideWrapper = document.querySelector(".banner-slides");
 const slides = document.querySelectorAll(".banner-slides img");
 const prevBtn = document.querySelector(".banner-btn.prev");
@@ -34,7 +34,6 @@ if (prevBtn) prevBtn.addEventListener("click", () => { prevSlide(); resetInterva
 dots.forEach((dot, i) => dot.addEventListener("click", () => { showSlide(i); resetInterval(); }));
 showSlide(0);
 
-// =================== CART & MINI-CART ===================
 const addCartButtons = document.querySelectorAll(".product-card .add-to-cart");
 
 function findProductFromCard(card) {
@@ -80,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// =================== SEARCH FUNCTION ===================
+
 const searchInput = document.getElementById("search-input");
 const searchBtn = document.getElementById("search-btn");
 const searchResults = document.getElementById("search-results");
@@ -133,7 +132,7 @@ searchInput && searchInput.addEventListener("input", () => {
 });
 document.addEventListener("click", e => { if (!e.target.closest(".search-wrapper")) hideSuggestions(); });
 
-// =================== BACK TO TOP ===================
+
 const backToTop = document.getElementById("back-to-top");
 window.addEventListener("scroll", () => {
   if (window.scrollY > 300) backToTop?.classList.add("show");
@@ -141,13 +140,13 @@ window.addEventListener("scroll", () => {
 });
 backToTop && backToTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
 
-// =================== NAVBAR (hamburger) ===================
+
 const menuToggle = document.getElementById("menu-toggle");
 const navLinks = document.querySelector("header nav .nav-links");
 menuToggle && menuToggle.addEventListener("click", () => navLinks.classList.toggle("active"));
 navLinks && navLinks.querySelectorAll("a").forEach(a => a.addEventListener("click", () => navLinks.classList.remove("active")));
 
-// =================== TOOLTIP ICONS ===================
+
 document.querySelectorAll('.icon-button').forEach(c => {
   const label = c.getAttribute("aria-label");
   if (label) {
@@ -158,7 +157,7 @@ document.querySelectorAll('.icon-button').forEach(c => {
   }
 });
 
-// =================== FOOTER YEAR ===================
+
 const yearEl = document.getElementById("current-year");
 yearEl && (yearEl.innerText = new Date().getFullYear());
 
@@ -167,7 +166,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (hash) {
     const btn = document.querySelector(`.filter-btn[data-category="${hash}"]`);
     if (btn) {
-      btn.click(); // Tự động bấm nút lọc
+      btn.click();
     }
   }
 });

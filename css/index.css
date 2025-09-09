@@ -1,4 +1,4 @@
-/* =================== CÁC BIẾN CHUNG =================== */
+
 :root {
     --primary-color: #01579b;
     --primary-dark: #003f5c;
@@ -13,7 +13,7 @@
     --gray-light: #eceff1;
     --gray-lighter: #cfd8dc;
 
-    --font-poppins: 'Poppins', sans-serif;
+    --font-poppins: 'Quicksand', sans-serif;
 
     --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
     --shadow-md: 0 8px 20px rgba(0, 0, 0, 0.1);
@@ -24,7 +24,6 @@
     --border-radius-lg: 20px;
 }
 
-/* =================== RESET & CHUNG =================== */
 * {
     margin: 0;
     padding: 0;
@@ -43,7 +42,7 @@ body {
     padding: 0 24px;
 }
 
-/* =================== BANNER =================== */
+
 .banner {
     position: relative;
     max-width: 1200px;
@@ -116,7 +115,7 @@ body {
     background: #fff;
 }
 
-/* =================== FEATURED PRODUCTS =================== */
+
 .featured-products {
     padding: 30px 0;
     margin: 40px 15px;
@@ -207,7 +206,7 @@ body {
     margin-bottom: 16px;
 }
 
-/* =================== NÚT THÊM VÀO GIỎ =================== */
+
 .add-to-cart {
     display: flex;
     align-items: center;
@@ -228,7 +227,6 @@ body {
     transform: translateY(-2px);
 }
 
-/* =================== MINI-CART =================== */
 .mini-cart {
     position: fixed;
     top: 0;
@@ -379,7 +377,7 @@ body.mini-cart-open .mini-cart-backdrop {
     visibility: visible;
 }
 
-/* =================== SEARCH AUTOCOMPLETE =================== */
+
 .search-results {
     position: absolute;
     top: 100%;
@@ -439,7 +437,7 @@ body.mini-cart-open .mini-cart-backdrop {
     color: var(--text-muted);
 }
 
-/* =================== TOAST NOTIFICATION =================== */
+
 .toast-notification {
     position: fixed;
     bottom: 30px;
@@ -461,7 +459,7 @@ body.mini-cart-open .mini-cart-backdrop {
     transform: translateY(0);
 }
 
-/* =================== RESPONSIVE =================== */
+
 @media (max-width: 768px) {
     .banner-slides img {
         height: 300px;
@@ -513,7 +511,7 @@ body.mini-cart-open .mini-cart-backdrop {
         grid-template-columns: 1fr;
     }
 }
-/* =================== Cart Count (icon badge) =================== */
+
 .cart-count {
     position: absolute;
     top: -8px;
@@ -527,7 +525,6 @@ body.mini-cart-open .mini-cart-backdrop {
     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
-/* =================== Toast Types =================== */
 .toast-notification.success {
     background: #4caf50;
 }
@@ -538,7 +535,7 @@ body.mini-cart-open .mini-cart-backdrop {
     background: #0288d1;
 }
 
-/* =================== Mini-cart on small screens =================== */
+
 @media (max-width: 480px) {
     .mini-cart {
         max-width: 100%;

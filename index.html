@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
+   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap&subset=vietnamese" rel="stylesheet">
 <body>
 
 <header>
@@ -22,10 +21,8 @@
       <div id="search-results"></div>
     </div>
     <div class="header-icons">
-      <button id="cartBtn"
-       class="icon-button" aria-label="Giỏ hàng">
-       <i class="fa fa-shopping-cart"></i></button>
-      <button class="icon-button" aria-label="Đăng nhập"><i class="fa fa-user"></i></button>
+      <a href="giohang.html" id="cartBtn" class="icon-button" aria-label="Giỏ hàng"><i class="fa fa-shopping-cart"></i></a>
+      <a href="dangnhap.html" id="user-button" class="icon-button" aria-label="Đăng nhập"><i class="fa fa-user"></i></a>
     </div>
     <button id="menu-toggle" class="hamburger" aria-label="Mở menu"><span></span><span></span><span></span></button>
   </div>
@@ -49,7 +46,7 @@
   </nav>
 </header>
 
-<main class="container">
+<main>
   <section class="banner" aria-label="Banner khuyến mãi">
       <div class="banner-slides">
         <img src="images/Banner/Welcome.png" alt="Welcome Aurelia">
@@ -81,13 +78,13 @@
       data-id="1" 
       data-name="Bó hoa hồng" 
       data-price="350000" 
-      data-img="images/Bó hoa/Hoa Hồng/Do.jpg">
+      data-img="images/Bó hoa/Hoa Hồng/Bó hoa hồng đỏ.jpg">
       <div class="product-img-wrapper">
-        <img src="images/Bó hoa/Hoa Hồng/Bó hoa hồng đỏ.jpg" alt="Bó hoa hồng đỏ tươi">
+        <img src="./images/Bohoa/Hoa Hồng/Bó hoa hồng đỏ.jpg" alt="Bó hoa hồng đỏ tươi">
         <span class="badge hot">HOT</span>
       </div>
       <h3>Bó hoa hồng</h3>
-      <p class="price">350,000₫</p>
+      <p class="price">350.000₫</p>
       <button class="add-to-cart" aria-label="Thêm Bó hoa hồng vào giỏ">
         <i class="fas fa-cart-plus"></i> Thêm vào giỏ
       </button>
@@ -97,13 +94,14 @@
       data-id="2" 
       data-name="Bó hoa tulip vàng" 
       data-price="420000" 
-      data-img="images/Bó hoa/Hoa Tulip/Vang.jpg">
+      data-img="images/Bó hoa/Hoa Tulip/Tulip vàng.jpg">
       <div class="product-img-wrapper">
-        <img src="images/Bó hoa/Hoa Tulip/Tulip vàng.jpg" alt="Bó hoa tulip vàng">
+        <img src="./images/Bohoa/Hoa Tulip/Tulip vàng.jpg" alt="Bó hoa tulip vàng">
         <span class="badge sale">SALE</span>
       </div>
       <h3>Bó hoa tulip vàng</h3>
-      <p class="price">420,000₫</p>
+      <p class="original-price">500.000₫</p>
+      <p class="price">420.000₫</p>
       <button class="add-to-cart" aria-label="Thêm Bó hoa tulip vàng vào giỏ">
         <i class="fas fa-cart-plus"></i> Thêm vào giỏ
       </button>
@@ -113,13 +111,15 @@
       data-id="3" 
       data-name="Giỏ hoa đỏ" 
       data-price="250000" 
-      data-img="images/Giỏ hoa/Vuong_2.jpg">
+      data-img="images/GioHoa/Gio hoa vuông 2.jpg">
       <div class="product-img-wrapper">
-        <img src="images/Giỏ hoa/Gio hoa vuông 2.jpg" alt="Giỏ hoa đỏ rực">
+        <img src="./images/GioHoa/Gio hoa vuông 2.jpg" alt="Giỏ hoa đỏ rực">
         <span class="badge sale">SALE</span>
       </div>
       <h3>Giỏ hoa đỏ</h3>
-      <p class="price">250,000₫</p>
+      <p class="original-price">500.000₫</p>
+      <p class="price">280.000₫</p>
+      
       <button class="add-to-cart" aria-label="Thêm Giỏ hoa đỏ vào giỏ">
         <i class="fas fa-cart-plus"></i> Thêm vào giỏ
       </button>
@@ -129,9 +129,9 @@
       data-id="4" 
       data-name="Hoa cưới đỏ" 
       data-price="400000" 
-      data-img="images/Hoa Chúc Mừng/Hoa Cưới/HongDo.jpg">
+      data-img="images/Hoa Chúc Mừng/Hoa Cưới/tone đỏ ( Hoa hồng + hoa chú rễ ).jpg">
       <div class="product-img-wrapper">
-        <img src="images/Hoa Chúc Mừng/Hoa Cưới/tone đỏ ( Hoa hồng + hoa chú rễ ).jpg" alt="Hoa cưới đỏ sang trọng">
+        <img src="./images/HoaChucMung/Hoa Cưới/tone đỏ ( Hoa hồng + hoa chú rễ ).jpg" alt="Hoa cưới đỏ sang trọng">
         <span class="badge hot">HOT</span>
       </div>
       <h3>Hoa cưới đỏ</h3>
@@ -145,12 +145,13 @@
       data-id="5" 
       data-name="Lẵng hoa tím" 
       data-price="650000" 
-      data-img="images/Hoa Chúc Mừng/Khai trương/khung_dai_tone_tim.jpg">
+      data-img="images/Hoa Chúc Mừng/Khai trương/Hoa khai trương khung dài tone tím dịu.jpg">
       <div class="product-img-wrapper">
-        <img src="images/Hoa Chúc Mừng/Khai trương/Hoa khai trương khung dài tone tím dịu.jpg" alt="Lẵng hoa tím khai trương">
+        <img src="./images/HoaChucMung/Khai trương/Hoa khai trương khung dài tone tím dịu.jpg" alt="Lẵng hoa tím khai trương">
         <span class="badge sale">SALE</span>
       </div>
       <h3>Lẵng hoa tím</h3>
+        <p class="original-price">500.000₫</p>
       <p class="price">650,000₫</p>
       <button class="add-to-cart" aria-label="Thêm Lẵng hoa tím vào giỏ">
         <i class="fas fa-cart-plus"></i> Thêm vào giỏ
@@ -161,14 +162,46 @@
       data-id="6" 
       data-name="Bó hoa màu sắc" 
       data-price="350000" 
-      data-img="images/Bó hoa/Hoa mix theo yêu cầu/Mix2.jpg">
+      data-img="images/Bó hoa/Hoa mix theo yêu cầu/Hoa mix 2.jpg">
       <div class="product-img-wrapper">
-        <img src="images/Bó hoa/Hoa mix theo yêu cầu/Hoa mix 2.jpg" alt="Bó hoa mix nhiều màu sắc">
+        <img src="./images/Bohoa/Hoa mix theo yêu cầu/Hoa mix 2.jpg" alt="Bó hoa mix nhiều màu sắc">
         <span class="badge hot">HOT</span>
       </div>
       <h3>Bó hoa màu sắc</h3>
       <p class="price">350,000₫</p>
       <button class="add-to-cart" aria-label="Thêm Bó hoa màu sắc vào giỏ">
+        <i class="fas fa-cart-plus"></i> Thêm vào giỏ
+      </button>
+    </article>
+
+      <article class="product-card" 
+      data-id="1" 
+      data-name="Giỏ hoa tròn 3" 
+      data-price="350000" 
+      data-img="images/GioHoa/Gio hoa tròn 3.jpg">
+      <div class="product-img-wrapper">
+        <img src="./images/GioHoa/Gio hoa tròn 3.jpg" alt="Giỏ hoa tròn 3">
+        <span class="badge hot">HOT</span>
+      </div>
+      <h3>Giỏ hoa tròn mix</h3>
+      <p class="price">520.000₫</p>
+      <button class="add-to-cart" aria-label="Thêm Bó hoa hồng vào giỏ">
+        <i class="fas fa-cart-plus"></i> Thêm vào giỏ
+      </button>
+    </article>
+
+      <article class="product-card" 
+      data-id="1" 
+      data-name="Bó hoa cẩm chướng" 
+      data-price="350000" 
+      data-img="images/Bohoa/Cam_chuong/Mẫu cẩm chướng 4.jpg">
+      <div class="product-img-wrapper">
+        <img src="./images/Bohoa/Cam_chuong/Mẫu cẩm chướng 4.jpg" alt="Bó hoa cẩm chướng">
+        <span class="badge hot">HOT</span>
+      </div>
+      <h3>Bó hoa cẩm chướng</h3>
+      <p class="price">400.000₫</p>
+      <button class="add-to-cart" aria-label="Thêm Bó hoa hồng vào giỏ">
         <i class="fas fa-cart-plus"></i> Thêm vào giỏ
       </button>
     </article>

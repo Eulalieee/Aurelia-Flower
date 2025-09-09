@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/order.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
+   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap&subset=vietnamese" rel="stylesheet">
 <body>
+
 
 <header>
   <div class="header-top container">
@@ -22,17 +22,28 @@
       <div id="search-results"></div>
     </div>
     <div class="header-icons">
-      <button id="cartBtn" class="icon-button" aria-label="Giỏ hàng"><i class="fa fa-shopping-cart"></i></button>
-      <button class="icon-button" aria-label="Đăng nhập"><i class="fa fa-user"></i></button>
+      <a href="giohang.html" id="cartBtn" class="icon-button" aria-label="Giỏ hàng"><i class="fa fa-shopping-cart"></i></a>
+      <a href="dangnhap.html" id="user-button" class="icon-button" aria-label="Đăng nhập"><i class="fa fa-user"></i></a>
     </div>
     <button id="menu-toggle" class="hamburger" aria-label="Mở menu"><span></span><span></span><span></span></button>
   </div>
   <nav>
-    <ul class="nav-links container">
-      <li><a href="#">Trang chủ</a></li>
-      <li><a href="#">Sản phẩm</a></li>
-      <li><a href="#">Liên hệ</a></li>
-    </ul>
+   <ul class="nav-links">
+  <li><a href="/index.html">Trang chủ</a></li>
+
+ <li class="dropdown">
+  <a href="sanpham.html">Sản phẩm</a>
+<ul class="dropdown-menu">
+  <li><a href="sanpham.html#bohoa">Bó hoa</a></li>
+  <li><a href="sanpham.html#giohoa">Giỏ hoa</a></li>
+  <li><a href="sanpham.html#chucmung">Hoa chúc mừng</a></li>
+  <li><a href="sanpham.html#hoatang">Hoa tang</a></li>
+</ul>
+</li>
+
+
+  <li><a href="/lienhe.html">Liên hệ</a></li>
+</ul>
   </nav>
 </header>
 <main class="container">

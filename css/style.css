@@ -1,15 +1,19 @@
-/* =================== RESET & BODY =================== */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
 body {
-    font-family: 'Poppins', 'Roboto', sans-serif;
+  
+   font-family: 'Quicksand', sans-serif; 
     background-color: #ffffff;
-    color: #dfe4e8;
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale;
+    color: var(--text-color);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 a {
     text-decoration: none;
@@ -20,7 +24,7 @@ button {
     font-family: inherit;
 }
 
-/* =================== HEADER =================== */
+
 header {
   position: relative;
   width: 100%;
@@ -44,7 +48,7 @@ header {
 }
 
 .logo img {
-  height: 55px; 
+  height: 80px; 
 }
 .search-wrapper {
   flex: 1;
@@ -80,11 +84,12 @@ header {
 .header-icons {
   display: flex;
   align-items: center; 
-  gap: 12px;
+  gap: 20px;
 }
 
 .icon-button {
   position: relative;
+  color:#423c3c;
   background: none;
   border: none;
   cursor: pointer;
@@ -120,22 +125,23 @@ nav {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 60px;
   position: relative;
-  top: 5px; 
+  top: 10px; 
 }
 .nav-links li a {
-  font-weight: 500;
+  font-weight: 700;
   color: #333;
-  padding: 6px 0;
+  padding: 8px 0;
   transition: 0.2s;
+  font-size: 1.2rem;
 }
 
 .nav-links li a:hover {
   color: #7caacb;
 }
 
-/* dropdown mới thêm */
+
 .nav-links li {
   position: relative;
 }
@@ -154,7 +160,8 @@ nav {
   visibility: hidden;
   transform: translateY(10px);
   transition: all 0.25s ease;
-  z-index: 99;
+  z-index: 88;
+  list-style-type: none;
 }
 
 .dropdown-menu li a {
@@ -174,7 +181,7 @@ nav {
   transform: translateY(0);
   top: 100%;
 }
-/* ===== Dropdown menu ===== */
+
 .nav-links .dropdown {
   position: relative;
 }
@@ -201,7 +208,7 @@ nav {
   display: block;
   padding: 10px 16px;
   color: #333;
-  font-weight: 500;
+  font-weight: 400;
   transition: background 0.2s;
 }
 
@@ -216,7 +223,7 @@ nav {
 
 
 
-/* hamburger */
+
 .hamburger {
     background: transparent;
     border: none;
@@ -226,7 +233,7 @@ nav {
 }
 .hamburger:focus { outline: 2px solid rgba(3,169,244,0.4); }
 
-/* tooltip (simple) */
+
 .icon-btn { position: relative; }
 .icon-btn .tooltip {
     position: absolute;
@@ -239,9 +246,9 @@ nav {
 }
 .icon-btn:hover .tooltip { display:block; }
 
-/* =================== FOOTER =================== */
+
 .footer-container {
-    max-width: 1200px;
+    max-width: auto;
     margin: 24px auto;
     padding: 30px 20px;
     display: flex;
@@ -304,7 +311,7 @@ nav {
     color: #423c3c;
 }
 
-/* =================== RESPONSIVE =================== */
+
 @media (max-width: 992px) {
     .footer-container {
         flex-direction: column;
@@ -484,7 +491,7 @@ nav {
         width: 100%; 
     }
     .header-icons #search-input {
-         width: calc(100% - 50px); 
+         width: calc(100% - 70px); 
          margin-right: var(--spacing-xs);
     }
     .header-icons {
@@ -494,10 +501,10 @@ nav {
         gap: var(--spacing-md);
     }
 }
-/* =================== Small utility =================== */
+
 .container { padding: 0 18px; max-width:1200px; margin:0 auto; }
 .hidden { display:none !important; }
-/* =================== BACK TO TOP =================== */
+
 .back-to-top {
     position: fixed;
     bottom: var(--spacing-lg);
@@ -533,3 +540,29 @@ nav {
     outline-offset: 2px;
 }
 
+main.container {
+    background-color: var(--white-color); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); 
+}
+
+
+.price-section {
+    display: flex;
+    align-items: baseline; 
+    gap: 10px; 
+    margin-top: 8px;
+}
+
+.original-price {
+    font-size: 1rem;
+    color: var(--text-muted);
+    text-decoration: line-through; 
+    margin: 0;
+}
+
+.sale-price {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 0;
+}

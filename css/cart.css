@@ -1,4 +1,4 @@
-/* =================== Cart Page Styles =================== */
+
 .cart-container {
     max-width: 1200px;
     margin: 40px auto;
@@ -10,7 +10,7 @@
     margin-top: 20px;
     background-color: #ffffff;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 15px rgba(197, 41, 41, 0.08);
     overflow: hidden;
 }
 .cart-table thead {
@@ -115,7 +115,7 @@
     transition: all 0.3s;
 }
 .btn:hover { text-decoration: none; transform: translateY(-2px); }
-/* =================== Responsive =================== */
+
 @media (max-width: 768px) {
     .cart-table, .cart-table thead, .cart-table tbody, .cart-table th, .cart-table td, .cart-table tr {
         display: block;

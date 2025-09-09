@@ -6,7 +6,7 @@
     <title>Danh mục sản phẩm - Aurelia Flower</title>
     <meta name="description" content="Khám phá các sản phẩm hoa tươi của Aurelia Flower: Bó hoa, giỏ hoa, hoa cưới, hoa chúc mừng.">
     <meta name="keywords" content="danh mục sản phẩm, bó hoa, giỏ hoa, hoa chúc mừng, hoa tang, Aurelia">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap&subset=vietnamese" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/product.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -24,7 +24,7 @@
       <button id="cartBtn"
        class="icon-button" aria-label="Giỏ hàng">
        <i class="fa fa-shopping-cart"></i></button>
-      <button class="icon-button" aria-label="Đăng nhập"><i class="fa fa-user"></i></button>
+      <a href="dangnhap.html" id="user-button" class="icon-button" aria-label="Đăng nhập"><i class="fa fa-user"></i></a>
     </div>
     <button id="menu-toggle" class="hamburger" aria-label="Mở menu"><span></span><span></span><span></span></button>
   </div>
@@ -46,9 +46,15 @@
 
   </nav>
 </header>
-<main class="container">
-  <h1 class="page-title">Danh mục sản phẩm</h1>
-    
+<div class="main-content-wrapper">
+    <main>
+      <nav class="breadcrumb-nav" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="sanpham.html">Sản phẩm</a></li>
+        </ol>
+      </nav>
+
   <div class="filter-buttons" role="group" aria-label="Bộ lọc sản phẩm">
       <button class="filter-btn active" data-category="all">Tất cả</button>
       <button class="filter-btn" data-category="bohoa">Bó hoa</button>
@@ -57,26 +63,7 @@
       <button class="filter-btn" data-category="hoatang">Hoa tang</button>
   </div>
   <section id="product-list" class="products"></section>
-
-
-<button id="back-to-top" class="back-to-top" aria-label="Lên đầu trang" title="Lên đầu trang"><i class="fas fa-arrow-up"></i></button>
-
-<div id="mini-cart-backdrop" class="mini-cart-backdrop" aria-hidden="true"></div>
-<div id="mini-cart" class="mini-cart" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Giỏ hàng nhanh">
-    <div class="mini-cart-content" role="document">
-        <button id="mini-cart-close" class="mini-cart-close" aria-label="Đóng giỏ hàng nhanh">&times;</button>
-        <h3>Giỏ hàng</h3>
-        <div id="mini-cart-items" class="mini-cart-items" aria-live="polite"></div>
-        <div class="mini-cart-footer">
-            <div class="mini-total">Tổng: <span id="mini-cart-total">0₫</span></div>
-            <div class="mini-actions">
-                <a href="/giohang.html" class="btn">Xem giỏ hàng</a>
-                <a href="/dathang.html" class="btn primary">Thanh toán</a>
-            </div>
-        </div>
-    </div>
 </div>
-
 <footer>
     <div class="footer-container">
         <div class="footer-col footer-left">

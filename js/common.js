@@ -37,7 +37,6 @@ function formatCurrency(v) {
     return num.toLocaleString('vi-VN') + '₫';
 }
 
-// =================== TOAST (chuẩn hóa) ===================
 function showToast(message) {
     let toast = document.querySelector('.toast-notification');
     if (!toast) {

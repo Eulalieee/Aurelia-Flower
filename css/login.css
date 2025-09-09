@@ -1,9 +1,9 @@
-/* =================== Auth Page Styles =================== */
+
 .auth-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 120px); /* Adjust based on header/footer height */
+    min-height: calc(100vh - 120px); 
     padding: 20px;
     background: linear-gradient(135deg, #e1f5fe, #b3e5fc);
 }
@@ -136,14 +136,14 @@
         padding: 30px 20px;
     }
 }
-/* =================== Input error state =================== */
+
 .form-group input.error {
     border-color: #e53935;
     background-color: #ffebee;
     box-shadow: 0 0 5px rgba(229, 57, 53, 0.3);
 }
 
-/* =================== Toast Types =================== */
+
 .toast-notification.success {
     background-color: #4caf50;
 }
@@ -154,7 +154,7 @@
     background-color: #0288d1;
 }
 
-/* =================== Smooth toggle link =================== */
+
 .toggle-link {
     transition: color 0.3s, text-decoration 0.3s;
 }

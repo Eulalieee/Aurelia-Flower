@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // Giả lập gửi form (sau này có thể thay bằng fetch)
             console.log("Contact submitted:", { name, email, message });
             showToast('Tin nhắn của bạn đã được gửi thành công. Cảm ơn bạn!');
             contactForm.reset();

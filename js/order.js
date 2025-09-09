@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let total = 0;
 
         if (cart.length === 0) {
-            orderSummaryList.innerHTML = '<li style="text-align:center; color: #757575;">Giỏ hàng trống</li>';
+            orderSummaryList.innerHTML = '<li style="text-align:center; color: #9b2222ff;">Giỏ hàng trống</li>';
             orderTotalSpan.innerText = formatCurrency(0);
             return;
         }
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // Validate cơ bản
+      
             const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if (!emailPattern.test(email)) {
                 showToast('Email không hợp lệ.');
@@ -60,27 +60,27 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // Giả lập gửi đơn hàng
+            
             console.log('Order submitted:', {
                 customer: { name, email, phone, address },
                 items: cart
             });
 
-            // Clear cart
+            
             saveCart([]);
             renderOrderSummary();
             showToast('Đơn hàng của bạn đã được gửi thành công. Cảm ơn bạn!');
 
-            // Redirect sau 2 giây
+           
             setTimeout(() => {
-                window.location.href = 'index.html'; // hoặc trang success riêng
+                window.location.href = 'index.html'; 
             }, 2000);
         });
     }
 
     renderOrderSummary();
 
-    // Footer năm hiện tại
+   
     const yearEl = document.getElementById('current-year');
     if (yearEl) yearEl.innerText = new Date().getFullYear();
 });

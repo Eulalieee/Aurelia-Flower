@@ -1,32 +1,89 @@
-// =================== DỮ LIỆU SẢN PHẨM MẪU ===================
 const sampleProducts = [
   // Bó hoa
-  { id: 1, name: "Bó hoa hồng đỏ", category: "bohoa", image: "../images/Bó hoa/Hoa Hồng/Bó hoa hồng đỏ.jpg", price: "350.000₫" },
-  { id: 2, name: "Bó hoa hướng dương", category: "bohoa", image: "../images/Bó hoa/Hương Dương/Hoa hướng Dương mix lá xanh.jpg", price: "300.000₫" },
-  { id: 3, name: "Bó hoa baby trắng", category: "bohoa", image: "../images/Bó hoa/Hương Dương/Hoa hướng Dương mix lá xanh.jpg", price: "280.000₫" },
-  { id: 4, name: "Bó hoa tulip", category: "bohoa", image: "images/bohoa4.jpg", price: "400.000₫" },
+  { id: 1, name: "Bó hoa hồng đỏ", category: "bohoa", image: "../images/Bohoa/Hoa Hồng/Bó hoa hồng đỏ.jpg", price: "350.000₫" },
+  { id: 2, name: "Bó hoa hồng vàng ", category: "bohoa", image: "../images/Bohoa/Hoa Hồng/Hoa hồng vàng.jpg", price: "300.000₫" },
+  { id: 3, name: "Bó hoa hồng hồng", category: "bohoa", image: "../images/Bohoa/Hoa Hồng/Hồng hồng.jpg", price: "280.000₫" },
+  { id: 4, name: "Bó hoa hồng xanh", category: "bohoa", image: "../images/Bohoa/Hoa Hồng/hồng xanh.jpg", price: "400.000₫" },
+    
+  { id: 1, name: "Bó hoa cẩm chướng 1", category: "bohoa", image: "../images/Bohoa/Cam_chuong/Mẫu cẩm chướng 2.jpg", price: "350.000₫" },
+  { id: 2, name: "Bó hoa cẩm chướng 2", category: "bohoa", image: "../images/Bohoa/Cam_chuong/mẫu cẩm chướng 3.jpg", price: "300.000₫" },
+  { id: 3, name: "Bó hoa cẩm chướng 3", category: "bohoa", image: "../images/Bohoa/Cam_chuong/Mẫu cẩm chướng 4.jpg", price: "280.000₫" },
+  { id: 4, name: "Bó hoa cẩm chướng 4", category: "bohoa", image: "../images/Bohoa/Cam_chuong/Mẫu cẩm chướng mix tú cầu 1.jpg", price: "400.000₫" },
+
+  { id: 1, name: "Bó hoa Tulip trắng phối cam", category: "bohoa", image: "../images/Bohoa/Hoa Tulip/Bó hoa tulip trắng phối cam.jpg", price: "350.000₫" },
+  { id: 2, name: "Bó hoa Tulip hồng ", category: "bohoa", image: "../images/Bohoa/Hoa Tulip/Tulip hồng.jpg", price: "300.000₫" },
+  { id: 3, name: "Bó hoa Tulip tím", category: "bohoa", image: "../images/Bohoa/Hoa Tulip/Tulip tím.jpg", price: "280.000₫" },
+  { id: 4, name: "Bó hoa Tulip vàng", category: "bohoa", image: "../images/Bohoa/Hoa Tulip/Tulip vàng.jpg", price: "400.000₫" },
+
+  { id: 1, name: "Hướng Dương mix hoa baby trắng", category: "bohoa", image: "../images/Bohoa/Hương Dương/Hoa Hướng Dương mix hoa baby trắng.jpg", price: "350.000₫" },
+  { id: 2, name: "Hướng Dương mix lá xanh ", category: "bohoa", image: "../images/Bohoa/Hương Dương/Hoa hướng Dương mix lá xanh.jpg", price: "300.000₫" },
+  { id: 3, name: "Hướng Dương cơ bản", category: "bohoa", image: "../images/Bohoa/Hương Dương/Mẫu 1 cành hoa hướng dương cơ bản 2.jpg", price: "280.000₫" },
+  { id: 4, name: "Hướng dương mix hoa cúc trắng ", category: "bohoa", image:"../images/Bohoa/Hương Dương/Mẫu hoa hướng dương mix với  hoa cúc trắng 1.jpg", price: "400.000₫" },
+
+  { id: 1, name: "Hoa mix 1", category: "bohoa", image: "../images/Bohoa/Hoa mix theo yêu cầu/Hoa mix 2.jpg", price: "350.000₫" },
+  { id: 2, name: "Hoa mix 2 ", category: "bohoa", image: "../images/Bohoa/Hoa mix theo yêu cầu/mẫu mix 1.jpg", price: "300.000₫" },
+  { id: 3, name: "Hoa mix 3", category: "bohoa", image: "../images/Bohoa/Hoa mix theo yêu cầu/mẫu mix 3.jpg", price: "280.000₫" },
+  { id: 4, name: "Hoa mix 4", category: "bohoa", image: "../images/Bohoa/Hoa mix theo yêu cầu/mẫu mix 4.jpg", price: "400.000₫" },
+
 
   // Giỏ hoa
-  { id: 5, name: "Giỏ hoa lan tím", category: "giohoa", image: "images/giohoa1.jpg", price: "500.000₫" },
-  { id: 6, name: "Giỏ hoa hồng mix", category: "giohoa", image: "images/giohoa2.jpg", price: "450.000₫" },
-  { id: 7, name: "Giỏ hoa cúc trắng", category: "giohoa", image: "images/giohoa3.jpg", price: "420.000₫" },
-  { id: 8, name: "Giỏ hoa tulip hồng", category: "giohoa", image: "images/giohoa4.jpg", price: "480.000₫" },
+  { id: 5, name: "Giỏ hoa tròn 1", category: "giohoa", image: "../images/GioHoa/Giỏ hoa tròn 1.jpg", price: "500.000₫" },
+  { id: 6, name: "Giỏ hoa tròn 2", category: "giohoa", image: "../images/GioHoa/Giỏ hoa tròn 2.jpg", price: "450.000₫" },
+  { id: 7, name: "Giỏ hoa tròn 3", category: "giohoa", image: "../images/GioHoa/Gio hoa tròn 3.jpg", price: "420.000₫" },
+  { id: 8, name: "Giỏ hoa tròn 4", category: "giohoa", image: "../images/GioHoa/Giỏ hoa tròn 4.jpg", price: "480.000₫" },
+
+  { id: 5, name: "Giỏ hoa vuông 1", category: "giohoa", image: "../images/GioHoa/Giỏ hoa vuông 1.jpg", price: "500.000₫" },
+  { id: 6, name: "Giỏ hoa vuông 2", category: "giohoa", image: "../images/GioHoa/Gio hoa vuông 2.jpg", price: "450.000₫" },
+  { id: 7, name: "Giỏ hoa vuông 3", category: "giohoa", image: "../images/GioHoa/Giỏ hoa vuông 3.jpg", price: "420.000₫" },
+  { id: 8, name: "Giỏ hoa vuông 4", category: "giohoa", image: "../images/GioHoa/Giỏ hoa vuông 4.jpg", price: "480.000₫" },
+  { id: 5, name: "Giỏ hoa vuông 5", category: "giohoa", image: "../images/GioHoa/Gio hoa 5.jpg", price: "350.000₫" },
+  { id: 6, name: "Giỏ hoa vuông 6", category: "giohoa", image: "../images/GioHoa/Gio hoa 6.jpg", price: "550.000₫" },
 
   // Hoa chúc mừng
-  { id: 9,  name: "Kệ hoa khai trương", category: "chucmung", image: "images/chucmung1.jpg", price: "600.000₫" },
-  { id: 10, name: "Hoa hộp chúc mừng", category: "chucmung", image: "images/chucmung2.jpg", price: "550.000₫" },
-  { id: 11, name: "Hoa chúc mừng sinh nhật", category: "chucmung", image: "images/chucmung3.jpg", price: "500.000₫" },
-  { id: 12, name: "Hoa chúc mừng công ty", category: "chucmung", image: "images/chucmung4.jpg", price: "650.000₫" },
+  { id: 9,  name: "Hoa khai trương 1", category: "chucmung", image: "../images/HoaChucMung/Khai trương/Hoa khai trương khung dài tone cam.jpg", price: "600.000₫" },
+  { id: 10, name: "Hoa khai trương 2", category: "chucmung", image: "../images/HoaChucMung/Khai trương/Hoa khai trương khung dài tone tím dịu.jpg", price: "550.000₫" },
+  { id: 11, name: "Hoa khai trương 3", category: "chucmung", image: "../images/HoaChucMung/Khai trương/Hoa khai trương khung dài tone xanh dương.jpg", price: "500.000₫" },
+  { id: 12, name: "Hoa khai trương 4", category: "chucmung", image: "../images/HoaChucMung/Khai trương/Hoa khai trương khung dài tone xanh.jpg", price: "650.000₫" },
+
+  { id: 9,  name: "Hoa Sinh Nhật 1", category: "chucmung", image: "../images/HoaChucMung/Sinh Nhật ( mix theeo yêu cầu )/mẫu 1.jpg", price: "600.000₫" },
+  { id: 10, name: "Hoa Sinh Nhật 2", category: "chucmung", image: "../images/HoaChucMung/Sinh Nhật ( mix theeo yêu cầu )/mẫu 2.jpg", price: "550.000₫" },
+  { id: 11, name: "Hoa Sinh Nhật 3", category: "chucmung", image: "../images/HoaChucMung/Sinh Nhật ( mix theeo yêu cầu )/mẫu 3.jpg", price: "500.000₫" },
+  { id: 12, name: "Hoa Sinh Nhật 4", category: "chucmung", image: "../images/HoaChucMung/Sinh Nhật ( mix theeo yêu cầu )/mẫu 4.jpg", price: "650.000₫" },
+
+  { id: 9,  name: "Hoa Tốt Nghiệp 1", category: "chucmung", image: "../images/HoaChucMung/Tốt Nghiệp/Mẫu có bóng tròn cho nam 1.jpg", price: "600.000₫" },
+  { id: 10, name: "Hoa Tốt Nghiệp 2", category: "chucmung", image: "../images/HoaChucMung/Tốt Nghiệp/Mẫu có bóng tròn cho nữ 2.jpg", price: "550.000₫" },
+  { id: 11, name: "Hoa Tốt Nghiệp 3", category: "chucmung", image: "../images/HoaChucMung/Tốt Nghiệp/Mẫu hương dương đơn giản 1.jpg", price: "500.000₫" },
+  { id: 12, name: "Hoa Tốt Nghiệp 4", category: "chucmung", image: "../images/HoaChucMung/Tốt Nghiệp/Mẫu gấu không hoa cơ bản (được chọn màu ).jpg", price: "650.000₫" },
+    
+  { id: 9,  name: "Hoa Cưới tone trắng 1", category: "chucmung", image: "../images/HoaChucMung/Hoa Cưới/hoa cưới tone trắng ( Hoa Baby).jpg", price: "600.000₫" },
+  { id: 10, name: "Hoa Cưới tone trắng 2", category: "chucmung", image: "../images/HoaChucMung/Hoa Cưới/hoa cưới tone trắng ( hoa hồng ).jpg", price: "550.000₫" },
+  { id: 11, name: "Hoa Cưới tone trắng 3", category: "chucmung", image: "../images/HoaChucMung/Hoa Cưới/hoa cưới tone trắng ( Hoa LiLy).jpg", price: "500.000₫" },
+  { id: 12, name: "Hoa Cưới tone trắng 4", category: "chucmung", image: "../images/HoaChucMung/Hoa Cưới/hoa cưới tone trắng ( Hoa Mẫu Đơn).jpg", price: "650.000₫" },
+
+  { id: 9,  name: "Hoa Cưới tone đỏ 1", category: "chucmung", image: "../images/HoaChucMung/Hoa Cưới/tone đỏ ( Hoa hồng + hoa chú rễ ).jpg", price: "600.000₫" },
+  { id: 10, name: "Hoa Cưới tone đỏ 2", category: "chucmung", image: "../images/HoaChucMung/Hoa Cưới/tone đỏ ( Hoa loa kèn + hoa chú rễ ).jpg", price: "550.000₫" },
+  { id: 11, name: "Hoa Cưới tone đỏ 3", category: "chucmung", image: "../images/HoaChucMung/Hoa Cưới/tone đỏ ( Hoa tulip mix + hoa chú rễ ).jpg", price: "500.000₫" },
+  { id: 12, name: "Hoa Cưới tone đỏ 4", category: "chucmung", image: "../images/HoaChucMung/Hoa Cưới/tone đỏ ( Mix nhiều loại + có kèm hoa chú rễ theo yêu cầu ).jpg", price: "650.000₫" },
+
 
   // Hoa tang
-  { id: 13, name: "Kệ hoa tang trắng", category: "hoatang", image: "images/hoatang1.jpg", price: "700.000₫" },
-  { id: 14, name: "Vòng hoa tang sen trắng", category: "hoatang", image: "images/hoatang2.jpg", price: "680.000₫" },
-  { id: 15, name: "Vòng hoa lan trắng", category: "hoatang", image: "images/hoatang3.jpg", price: "720.000₫" },
-  { id: 16, name: "Kệ hoa cúc tang", category: "hoatang", image: "images/hoatang4.jpg", price: "650.000₫" },
+  { id: 13, name: "Hoa tang mẫu tròn 1", category: "hoatang", image: "../images/Hoatang/Hoa tang mẫu tròn 1.jpg", price: "700.000₫" },
+  { id: 14, name: "Hoa tang mẫu tròn 2", category: "hoatang", image: "../images/Hoatang/Hoa tang mẫu tròn 2.jpg", price: "680.000₫" },
+  { id: 15, name: "Hoa tang mẫu tròn 3", category: "hoatang", image: "../images/Hoatang/Hoa tang mẫu tròn 3.jpg", price: "720.000₫" },
+  { id: 16, name: "Hoa tang mẫu tròn 4", category: "hoatang", image: "../images/Hoatang/Hoa tang mẫu tròn 4.jpg", price: "650.000₫" },
+  { id: 13, name: "Hoa tang mẫu tròn 5", category: "hoatang", image: "../images/Hoa Tang/Hoa tang mẫu tròn 5.jpg", price: "700.000₫" },
+   
+  { id: 13, name: "Hoa tang mẫu đứng 1", category: "hoatang", image: "../images/Hoatang/Hoa viếng mẫu đứng 1.jpg", price: "700.000₫" },
+  { id: 14, name: "Hoa tang mẫu đứng 2", category: "hoatang", image: "../images/Hoatang/Hoa viếng mẫu đứng 2.jpg", price: "680.000₫" },
+  { id: 15, name: "Hoa tang mẫu đứng 3", category: "hoatang", image: "../images/Hoatang/Hoa viếng mẫu đứng 3.jpg", price: "720.000₫" },
+  { id: 16, name: "Hoa tang mẫu đứng 4", category: "hoatang", image: "../images/Hoa Tang/Hoa tang mẫu vuông 4.jpg", price: "650.000₫" },
+  { id: 13, name: "Hoa tang mẫu đứng 5", category: "hoatang", image: "../images/Hoa Tang/Hoa tang mẫu vuông 5.jpg", price: "700.000₫" },
+
+  
 ];
 
 
-// =================== RENDER & FILTER SẢN PHẨM ===================
+
 const productList = document.getElementById('product-list');
 const filterButtons = document.querySelectorAll('.filter-btn');
 
@@ -60,7 +117,6 @@ function filterProducts(category) {
   let filtered;
 
   if (category === "all") {
-    // Lấy 2 sản phẩm đầu mỗi loại → tổng 8 cái
     const bohoa = sampleProducts.filter(p => p.category === "bohoa").slice(0, 2);
     const giohoa = sampleProducts.filter(p => p.category === "giohoa").slice(0, 2);
     const chucmung = sampleProducts.filter(p => p.category === "chucmung").slice(0, 2);
@@ -73,8 +129,8 @@ function filterProducts(category) {
   renderProducts(filtered);
 }
 
-// =================== MINI-CART MODULE ===================
-const cartBtn = document.getElementById('cart-link'); // sửa selector đúng HTML
+
+const cartBtn = document.getElementById('cart-link'); 
 const miniCart = document.getElementById('mini-cart');
 const miniCartCloseBtn = document.getElementById('mini-cart-close');
 const miniCartBackdrop = document.getElementById('mini-cart-backdrop');
@@ -131,9 +187,8 @@ function closeMiniCart() {
     document.body.classList.remove('mini-cart-open');
 }
 
-// =================== XỬ LÝ SỰ KIỆN ===================
+
 document.addEventListener('click', (e) => {
-    // Event delegation cho nút "Thêm vào giỏ hàng"
     if (e.target.closest('.add-to-cart')) {
         const button = e.target.closest('.add-to-cart');
         const card = button.closest('.product-card');
@@ -152,17 +207,20 @@ document.addEventListener('click', (e) => {
             cart.push(product);
         }
         saveCart(cart);
-        renderMiniCart(); // cập nhật mini-cart ngay
+        renderMiniCart();
         button.classList.add('clicked');
         setTimeout(() => button.classList.remove('clicked'), 500);
         showToast(`${product.name} đã được thêm vào giỏ hàng!`);
         openMiniCart();
     }
 
-    // Event delegation cho nút lọc
+   
     if (e.target.closest('.filter-btn')) {
         const button = e.target.closest('.filter-btn');
         filterProducts(button.dataset.category);
+
+        document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
     }
 });
 
@@ -170,12 +228,11 @@ if (cartBtn) cartBtn.addEventListener('click', openMiniCart);
 if (miniCartCloseBtn) miniCartCloseBtn.addEventListener('click', closeMiniCart);
 if (miniCartBackdrop) miniCartBackdrop.addEventListener('click', closeMiniCart);
 
-// =================== INIT ===================
 document.addEventListener('DOMContentLoaded', () => {
     renderProducts(sampleProducts);
     updateCartIcon();
 
-    // Khởi tạo nút back to top
+ 
     const backToTop = document.getElementById('back-to-top');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 300) backToTop.classList.add('show');
@@ -183,20 +240,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     backToTop && backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-    // Khởi tạo năm hiện tại ở footer
+ 
     const yearEl = document.getElementById('current-year');
     if (yearEl) yearEl.innerText = new Date().getFullYear();
 });
 document.addEventListener("DOMContentLoaded", () => {
-  // render tất cả sản phẩm trước
+
   renderProducts(sampleProducts);
 
-  // kiểm tra nếu URL có hash (vd: #bohoa, #giohoa...)
+
   const hash = window.location.hash.replace("#", "");
   if (hash) {
     filterProducts(hash);
 
-    // đánh dấu nút filter tương ứng active
+  
     document.querySelectorAll(".filter-btn").forEach(btn => {
       btn.classList.remove("active");
       if (btn.dataset.category === hash) {
